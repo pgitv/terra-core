@@ -17,9 +17,14 @@ class DatePickerOnChange extends React.Component {
     return (
       <div>
         <h3>
-Selected Date:
+Selected Date123:
           <span id="selected-date">{this.state.date}</span>
+          <br></br>
           <span id="selected-date-utc">{moment().format()}</span>
+          <br></br>
+          <span id="selected-date-utcOffset">{moment().utcOffset()}</span>
+          <br></br>
+          <span id="selected-date-js">{Date('06/01/2017')}</span>
         </h3>
         <DatePicker
           name="date-input-onchange"
