@@ -7,6 +7,7 @@ import PopperContainer from './_PopperContainer';
 import DateInput from './DateInput';
 import DateUtil from './DateUtil';
 import styles from './DatePicker.module.scss';
+import moment from 'moment';
 
 const propTypes = {
   /**
@@ -118,6 +119,9 @@ class DatePicker extends React.Component {
     this.handleOnClickOutside = this.handleOnClickOutside.bind(this);
     this.handleOnInputFocus = this.handleOnInputFocus.bind(this);
     this.handleOnCalendarButtonClick = this.handleOnCalendarButtonClick.bind(this);
+
+    const localMoment = moment();
+    console.log('********Date4*****', localMoment.format());
   }
 
   componentDidMount() {
@@ -168,9 +172,18 @@ class DatePicker extends React.Component {
   }
 
   handleChange(date, event) {
+
+    const localMoment = moment();
+    console.log('********Date5*****', localMoment.format());
+
     this.setState({
       selectedDate: date,
     });
+
+    if (date && date.isValid()) {
+      console.log('******Date1****', date);
+      console.log('******Date2****', date.format());
+    }
 
     if (this.props.onChange) {
       this.props.onChange(event, date && date.isValid() ? date.format() : '');
