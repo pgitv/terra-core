@@ -1,6 +1,6 @@
 import React from 'react';
-import DatePicker from '../../../../lib/DatePicker';
 import moment from 'moment';
+import DatePicker from '../../../../lib/DatePicker';
 
 class DatePickerOnChange extends React.Component {
   constructor(props) {

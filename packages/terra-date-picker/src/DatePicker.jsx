@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 import ReactDatePicker from 'react-datepicker';
 import 'terra-base/lib/baseStyles';
 import ResponsiveElement from 'terra-responsive-element';
+import moment from 'moment';
 import PopperContainer from './_PopperContainer';
 import DateInput from './DateInput';
 import DateUtil from './DateUtil';
 import styles from './DatePicker.module.scss';
-import moment from 'moment';
 
 const propTypes = {
   /**
@@ -172,7 +172,6 @@ class DatePicker extends React.Component {
   }
 
   handleChange(date, event) {
-
     const localMoment = moment();
     console.log('********Date5*****', localMoment.format());
 
