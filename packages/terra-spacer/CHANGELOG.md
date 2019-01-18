@@ -4,6 +4,9 @@ ChangeLog
 Unreleased
 ----------
 
+### Added
+* Added stylelint-enable at end of Spacer.module.scss
+
 2.32.0 - (January 8, 2019)
 ------------------
 ### Changed

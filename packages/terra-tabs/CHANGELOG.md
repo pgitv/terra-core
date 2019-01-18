@@ -4,6 +4,11 @@ ChangeLog
 Unreleased
 ----------
 
+### Added
+* Added stylelint-enable at end of ModularTabs.module.scss
+* Added stylelint-enable at end of StructuralTabs.module.scss
+* Added stylelint-enable at end of Tabs.module.scss
+
 4.0.0 - (January 8, 2019)
 ------------------
 ### Changed

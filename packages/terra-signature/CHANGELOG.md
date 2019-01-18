@@ -4,6 +4,9 @@ Changelog
 Unreleased
 ----------
 
+### Added
+* Added stylelint-enable at end of Signature.module.scss
+
 1.32.0 - (January 8, 2019)
 ------------------
 ### Changed

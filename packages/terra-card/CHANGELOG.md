@@ -3,6 +3,8 @@ ChangeLog
 
 Unreleased
 ----------
+### Added
+* Added stylelint-enable at end of CardBody.module.scss
 
 3.0.0 - (January 8, 2019)
 ------------------
